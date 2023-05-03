@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{79e0de00-27e5-4f9e-97f0-3b9cf4b054dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World">
+      <UniqueIdentifier>{d3eddc71-94d7-4277-8695-d5d02feb3f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Packet">
+      <UniqueIdentifier>{332aa908-3ff7-4d5f-82ca-2e2a079f6db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Discord">
+      <UniqueIdentifier>{df9814f1-e7f7-4336-aaf4-66315ff4e87d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Guild">
+      <UniqueIdentifier>{21f04d9f-19b3-4d28-8d81-3d4fd153996c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="back_end.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_packet.h">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_action.h">
+      <Filter>Header Files\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="discord_webhook.h">
+      <Filter>Header Files\Discord</Filter>
+    </ClInclude>
+    <ClInclude Include="world_base.h">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="world_action.h">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="player_base.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="player_action.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="player_packet.h">
+      <Filter>Header Files\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="server_sided.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enet server test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

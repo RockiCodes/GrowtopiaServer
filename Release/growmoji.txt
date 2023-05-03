@@ -1,0 +1,85 @@
+set_default_color|`o
+add_label_with_icon|big|Growmojis|left|1366|
+|
+add_smalltext_forced| (sigh) |left|
+add_smalltext_forced| (mad) |left|
+add_smalltext_forced| (smile) |left|
+add_smalltext_forced| (tongue) |left|
+add_smalltext_forced| (wow) |left|
+|
+add_smalltext_forced| (no) |0.5|left|
+add_smalltext_forced| (shy) |0.5|left|
+add_smalltext_forced| (wink) |0.5|left|
+add_smalltext_forced| (music) |0.5|left|
+add_smalltext_forced| (lol) |0.5|left|
+|
+
+add_smalltext_forced| (yes) |0.5|left|
+add_smalltext_forced| (love) |0.5|left|
+add_smalltext_forced| (megaphone) |0.5|left|
+add_smalltext_forced| (heart) |0.5|left|
+add_smalltext_forced| (cool) |0.5|left|
+
+add_smalltext_forced| (kiss) |0.5|left|
+
+add_smalltext_forced| (agree) |0.5|left|
+
+add_smalltext_forced| (see-no-evil) |0.5|left|
+
+add_smalltext_forced| (dance) |0.5|left|
+
+add_smalltext_forced| (build) |0.5|left|
+
+add_smalltext_forced| (oops) | 0.5|left|
+
+add_smalltext_forced| (sleep) | 0.5|left|
+
+add_smalltext_forced| (punch) | 0.5|left|
+
+add_smalltext_forced| (bheart) | 0.5|left|
+
+add_smalltext_forced| (cry) | 0.5|left|
+
+add_smalltext_forced| (bunny) | 0.5|left|
+
+add_smalltext_forced| (cactus) | 0.5|left|
+
+add_smalltext_forced| (pine) | 0.5|left|
+
+add_smalltext_forced| (peace) | 0.5|left|
+
+add_smalltext_forced| (terror) | 0.5|left|
+
+add_smalltext_forced| (troll) | 0.5|left|
+
+add_smalltext_forced| (fireworks) | 0.5|left|
+
+add_smalltext_forced| (party) | 0.5|left|
+
+add_smalltext_forced| (song) | 0.5|left|
+
+add_smalltext_forced| (ghost) | 0.5|left|
+
+add_smalltext_forced| (nuke) | 0.5|left|
+
+add_smalltext_forced| (halo) | 0.5|left|
+
+add_smalltext_forced| (lucky) | 0.5|left|
+
+add_smalltext_forced| (wl) | 0.5|left|
+
+add_smalltext_forced| (grow) | 0.5|left|
+
+add_smalltext_forced| (gems) | 0.5|left|
+
+add_smalltext_forced| (gtoken) | 0.5|left|
+
+add_smalltext_forced| (vend) | 0.5|left|
+
+add_smalltext_forced| (football) | 0.5|left|
+
+add_smalltext_forced| (ill) | 0.5|left|
+
+|
+end_dialog|goalslist||OK|
+add_quick_exit|

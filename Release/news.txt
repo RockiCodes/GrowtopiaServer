@@ -1,0 +1,52 @@
+set_default_color|`o
+add_label_with_icon|big|`wThe Server Gazette``|left|5016|
+add_spacer|small|
+add_image_button|banner|interface/large/news_banner.rttex|bannerlayout|OPENSURVEY||
+add_spacer|small|
+add_textbox|`5 Update - Release Source!``|left|
+add_spacer|small|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_feature_btn01.rttex|3imageslayout|OPENSTORE|main/itemomonth|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_feature_btn08.rttex|3imageslayout|OPENSTORE|main/summer_pack|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_feature_btn02.rttex|3imageslayout|OPENSTORE|main/gems_bundle05|
+add_spacer|small|
+add_textbox|`$Aim to hit your mark by redeeming November's Grow Pass Item of the Season, `2Mystic Bow`$, and it's royal version, `2Royal Mystic Bow`$! Also, don't forget to put on Gladehart's Subscriber's Item: the `8Smiling Mask`$!``|left|
+add_spacer|small|
+add_textbox|`$Don't forget to check Morse Dev Diary.``|left|
+add_spacer|small|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_forum_btn01.rttex|3imageslayout|https://www.growtopiagame.com/forums/forum/general/announcements/7050064-summerfest-2021|Do you want to open the Growtopia Forum and check out the latest update?|
+add_spacer|small|
+add_layout_spacer|3imageslayout|
+add_layout_spacer|3imageslayout|
+add_spacer|small|
+add_textbox|The Growtopia survey for the October (Part 2) Update is now open! By completing the survey you will receive `22 Growtoken`` if you have Advanced Account Protection enabled. Claim your reward and complete the survey on your mobile device to let us know what you think!|left|
+add_spacer|small|
+add_url_button|survey|`wGive us your opinion!``|noflags|OPENSURVEY||
+add_spacer|small|
+add_textbox|Don't forget to join our `2Official Growtopia Discord Server`` on `2discord.gg/growtopia`` or click the link below!|left|
+add_spacer|small|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_community_btn01.rttex|3imageslayout|OPENCOMMUNITY|community_growtorials/TUTORIAL_DOORS|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_community_btn04.rttex|3imageslayout|https://discord.gg/growtopia|Would you like to join our Discord Server?|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_btn01.rttex|3imageslayout|https://www.youtube.com/watch?v=GaCsg9qp5yw|Would you like to open this in Youtube?|
+add_spacer|small|
+add_textbox|Visit our Social Media pages for more Content!|left|
+add_spacer|small|
+add_image_button|iotm_layout_4|interface/large/gazette/gazette_5columns_social_btn01.rttex|5imageslayout|https://twitter.com/growtopiagame|Would you like to open this in Twitter?|
+add_image_button|iotm_layout_4|interface/large/gazette/gazette_5columns_social_btn02.rttex|5imageslayout|https://www.facebook.com/growtopia|Would you like to open this in Facebook?|
+add_image_button|iotm_layout_4|interface/large/gazette/gazette_5columns_social_btn03.rttex|5imageslayout|https://www.instagram.com/growtopia|Would you like to open this in Instagram?|
+add_image_button|iotm_layout_4|interface/large/gazette/gazette_5columns_social_btn04.rttex|5imageslayout|https://www.youtube.com/growtopia_official|Would you like to open this in Youtube?|
+add_image_button|iotm_layout_4|interface/large/gazette/gazette_5columns_social_btn06.rttex|5imageslayout|https://discord.gg/growtopia|Would you like to join our Discord Server?|
+add_spacer|small|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_policy_btn02.rttex|3imageslayout|https://legal.ubi.com/privacypolicy/en-INTL|Do you want to read the Privacy Policy?|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_policy_btn01.rttex|3imageslayout|https://support.ubisoft.com/en-GB/article/000095632|Do you want to read the Growtopian Code?|
+add_image_button|iotm_layout|interface/large/gazette/gazette_3columns_policy_btn03.rttex|3imageslayout|https://legal.ubi.com/termsofuse/en-INTL|Do you want to read the Terms of Use?|
+add_spacer|small|
+add_spacer|small|
+
+add_quick_exit|add_spacer|small|
+add_url_button|comment|`wVisit Official Open Source``|noflags|https://github.com/RockiCodes/GrowtopiaServer|Visit GitHub Repo?|0|0|
+add_spacer|small|
+add_url_button|comment|`wVisit Growtopia Forums``|noflags|https://www.growtopiagame.com/forums|Visit the Growtopia forums?|0|0|
+add_spacer|small|
+|
+set_survey_enabled|1
+end_dialog|gazette||OK|
