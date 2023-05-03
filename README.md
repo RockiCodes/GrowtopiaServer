@@ -13,7 +13,7 @@ This project has been published under GNU AFFERO GPL license, so you need to **p
 - [ ] Make heavy events asynchronous with possibly some good thread count (probably one or two) and connect them to event pool or use callbacks
 - [X] Premium World Lock System (Used to purchase ingame goods)
 - [X] Discord Webhook Code (discord_webhook.h)
-- [ ] World Lock Algorithm (Sl, Bl, Hl, Wl, Dl, etc)
+- [ ] World Lock Algorithm (Wl, Dl, BGL, etc)
 
 If you want to support the development of this project, make sure you contribute to this repo!
 
