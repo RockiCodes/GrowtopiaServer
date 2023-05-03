@@ -20,3 +20,6 @@ If you want to support the development of this project, make sure you contribute
 
 Make Sure To Check Out My Youtube Channel: (JenZip GT)
 - https://www.youtube.com/channel/UCBpSmvDyThHz7obkqivKTLA
+
+Updates:
+-
