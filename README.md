@@ -6,13 +6,12 @@ This project has been compiled with Visual Studio 2022 and 2019 or other compile
 This project has been published under GNU AFFERO GPL license, so you need to **publish the whole source code and citate the orginal authors name, even if you are using your server as service**!
 
 # **TODO list:**
-- [ ] ENet Functions For Connectivity (using ENet C++ Library)
-- [ ] Item Serializing (support for new v15)
-- [ ] Readable and Easy to Use/Understand
-- [ ] Try to write multiple servers sharing only between themselves possibly world list, player list and broadcast queue
-- [ ] Write event pool - this is needed to make delayed actions like respawning
+- [X] ENet Functions For Connectivity (using ENet C++ Library)
+- [X] Item Serializing (support for new v15)
+- [X] Readable and Easy to Use/Understand
+- [ ] Write event pool - this is needed to delay actions like respawning
 - [ ] Make heavy events asynchronous with possibly some good thread count (probably one or two) and connect them to event pool or use callbacks
-- [ ] Premium World Lock System (Used to purchase ingame goods)
+- [X] Premium World Lock System (Used to purchase ingame goods)
 - [ ] Broadcast, Banning, etc logs (sent to discord using webhooks)
 - [ ] World Lock Algorithm (Sl, Bl, Hl, Wl, Dl, etc)
 
