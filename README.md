@@ -14,6 +14,7 @@ This project has been published under GNU AFFERO GPL license, so you need to **p
 - [X] Premium World Lock System (Used to purchase ingame goods)
 - [X] Discord Webhook Code (discord_webhook.h)
 - [ ] World Lock Algorithm (Wl, Dl, BGL, etc)
+- [ ] Tile Algorithm (Sl, Bl, Hl, Builder Lock)
 
 If you want to support the development of this project, make sure you contribute to this repo!
 
