@@ -6,7 +6,8 @@ This project has been compiled with Visual Studio 2022 and 2019 or other compile
 This project has been published under GNU AFFERO GPL license, so you need to **publish the whole source code and citate the orginal authors name, even if you are using your server as service**!
 
 # **TODO list:**
-- [ ] Refactor whole code, it is very hard readable and there might be problems with maintaining it
+- [ ] ENet Functions For Connectivity (using ENet C++ Library)
+- [ ] Item Serializing (support for new v15)
 - [ ] Try to write multiple servers sharing only between themselves possibly world list, player list and broadcast queue
 - [ ] Write event pool - this is needed to make delayed actions like respawning
 - [ ] Make heavy events asynchronous with possibly some good thread count (probably one or two) and connect them to event pool or use callbacks
