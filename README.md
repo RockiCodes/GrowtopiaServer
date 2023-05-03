@@ -8,6 +8,7 @@ This project has been published under GNU AFFERO GPL license, so you need to **p
 # **TODO list:**
 - [ ] ENet Functions For Connectivity (using ENet C++ Library)
 - [ ] Item Serializing (support for new v15)
+- [ ] Readable and Easy to Use/Understand
 - [ ] Try to write multiple servers sharing only between themselves possibly world list, player list and broadcast queue
 - [ ] Write event pool - this is needed to make delayed actions like respawning
 - [ ] Make heavy events asynchronous with possibly some good thread count (probably one or two) and connect them to event pool or use callbacks
