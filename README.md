@@ -15,6 +15,7 @@ This project has been published under GNU AFFERO GPL license, so you need to **p
 - [X] Discord Webhook Code (discord_webhook.h)
 - [X] World Lock Algorithm (Wl, Dl, BGL, etc)
 - [ ] Tile Algorithm (Sl, Bl, Hl, Builder Lock)
+- [X] Event Pool (found in event_pool.h [used for delaying actions])
 
 If you want to support the development of this project, make sure you contribute to this repo!
 
