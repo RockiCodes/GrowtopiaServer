@@ -4,144 +4,144 @@ C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\crypt_blowfish\c
 C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\bcrypt.cpp(118,6): warning C4101: 'fd': unreferenced local variable
 C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\back_end.h(193,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\game_packet.h(197,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(35,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(53,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(58,14): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(62,14): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(95,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(164,32): warning C4101: 'e': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(170,32): warning C4101: 'e': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(347,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(358,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(368,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(386,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(396,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(416,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,246): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,204): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,163): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,371): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,330): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,289): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,495): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,454): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,413): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,582): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,267): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,218): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,170): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,413): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,365): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,317): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,558): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,510): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,462): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(533,659): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,244): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,202): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,161): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,369): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,328): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,287): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,493): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,452): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,411): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(546,580): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(652,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(698,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(780,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(784,83): warning C4018: '>': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(801,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(882,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(979,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(993,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(1037,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(1043,29): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(35,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(54,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(57,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(60,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(92,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(157,35): warning C4101: 'e': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(163,35): warning C4101: 'e': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(336,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(348,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(358,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(375,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(385,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(403,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,255): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,213): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,172): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,380): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,339): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,298): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,504): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,463): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,422): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(502,591): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,276): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,227): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,179): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,422): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,374): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,326): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,567): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,519): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,471): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(511,668): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,247): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,205): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,164): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,372): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,331): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,290): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,496): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,455): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,414): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(524,583): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(624,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(663,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(734,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(736,92): warning C4018: '>': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(749,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(819,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(900,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(912,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(958,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\player_action.h(964,32): warning C4018: '>=': signed/unsigned mismatch
 C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\guild_action.h(11,4): warning C4551: function call missing argument list
 C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\guild_action.h(26,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(65,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(87,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(176,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(185,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(195,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(211,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(305,13): warning C4101: 'e': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(470,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(471,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(474,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(488,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(489,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(576,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(577,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(677,53): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(777,9): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(811,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(812,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(820,11): warning C4018: '>': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(827,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(828,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(945,70): warning C4018: '>': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1597,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(979,9): warning C4101: 'ischecked1': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(980,9): warning C4101: 'ischecked2': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1543,13): warning C4101: 'e': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1722,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1875,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1924,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1925,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1941,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2053,46): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2065,46): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2080,46): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2092,46): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2381,12): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2382,12): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2385,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2417,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2418,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2421,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(12,32): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(27,11): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(52,19): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(1201,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1136,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1148,84): warning C4018: '>=': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1148,220): warning C4018: '>=': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1791,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1792,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1816,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1816,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1917,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2307,25): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2351,25): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2768,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2771,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2774,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2792,8): warning C4286: 'std::runtime_error &': is caught by base class ('std::exception &') on line 2788
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3252,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3260,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3737,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3737,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3748,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3748,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4014,25): warning C4309: '=': truncation of constant value
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4202,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4472,52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4473,52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4481,51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4482,51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4527,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4553,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4579,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4605,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4631,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2303,37): warning C4101: 'e': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2428,37): warning C4101: 'e': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4289,16): warning C4101: 'currentPeer': unreferenced local variable
-C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4522,19): warning C4101: 'e': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(73,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(94,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(178,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(187,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(195,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(208,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(293,16): warning C4101: 'e': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(445,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(446,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(449,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(462,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(463,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(550,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(551,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(646,56): warning C4805: '|': unsafe mix of type 'bool' and type 'int' in operation
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(738,12): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(772,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(773,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(780,14): warning C4018: '>': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(787,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(788,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(921,81): warning C4018: '>': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1543,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(952,21): warning C4101: 'ischecked1': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(953,21): warning C4101: 'ischecked2': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1495,16): warning C4101: 'e': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1655,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1800,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1843,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1844,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1859,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1960,58): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1971,58): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1984,58): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(1995,58): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2236,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2237,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2240,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2270,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2271,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\world_action.h(2274,27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(10,41): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(23,14): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(46,28): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\server_sided.h(1162,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1105,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1117,84): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1117,220): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1760,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1761,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1785,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1785,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(1856,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2246,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2290,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2698,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2701,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2704,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2722,8): warning C4286: 'std::runtime_error &': is caught by base class ('std::exception &') on line 2718
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3180,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3188,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3639,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3639,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3650,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3650,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(3908,25): warning C4309: '=': truncation of constant value
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4093,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4351,52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4352,52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4360,51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4361,51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4404,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4430,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4456,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4482,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4508,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2242,37): warning C4101: 'e': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(2367,37): warning C4101: 'e': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4175,16): warning C4101: 'currentPeer': unreferenced local variable
+C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\enet server test\enet server test.cpp(4399,19): warning C4101: 'e': unreferenced local variable
   Generating code
-  1 of 2949 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+  57 of 2949 functions ( 1.9%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    24 functions had inline decision re-evaluated but remain unchanged
+    10 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   enet server test.vcxproj -> C:\Users\JenZip\Desktop\GrowtopiaServer-Latest\Release\enet server test.exe

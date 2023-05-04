@@ -18,6 +18,7 @@
 
 #include "stdafx.h"
 #include "back_end.h"
+#include "event_pool.h"
 #include "game_packet.h"
 #include "discord_webhook.h"
 #include "player_base.h"
@@ -38,21 +39,12 @@ int main()
 		
 	enet_initialize();
 	ENetAddress address;
-	/* Bind the server to the default localhost.     */
-	/* A specific host address can be specified by   */
 	enet_address_set_host (&address, "0.0.0.0");
-	//address.host = ENET_HOST_ANY;
-	/* Bind the server to port 1234. */
 	address.port = configPort;
-	server = enet_host_create(&address /* the address to bind the server host to */,
-		1024      /* allow up to 32 clients and/or outgoing connections */,
-		10      /* allow up to 2 channels to be used, 0 and 1 */,
-		0      /* assume any amount of incoming bandwidth */,
-		0      /* assume any amount of outgoing bandwidth */);
+	server = enet_host_create(&address, 1024, 10, 0, 0);
 	if (server == NULL)
 	{
-		fprintf(stderr,
-			"An error occurred while trying to create an ENet server host.\n");
+		fprintf(stderr, "An error occurred while trying to create an ENet server host.\n");
 		while (1);
 		exit(EXIT_FAILURE);
 	}
@@ -63,9 +55,9 @@ int main()
 	if (myFile.fail()) {
 		std::cout << "Items.dat not found!" << endl;
 		std::cout << "Please put items.dat in this folder:" << endl;
-                system("cd");
+        system("cd");
 		std::cout << "If you dont have items.dat, you can get it from Growtopia cache folder. Please exit." << endl;
-                while (true);
+        while (true);
 	}
 	buildItemsDatabase();
 	cout << "Database is built!" << endl;
@@ -75,8 +67,8 @@ int main()
 	if (AutoSaveWorlds.joinable()) AutoSaveWorlds.detach();
 
 	worldDB.get("START");
+	worldDB.get("REC");
 	ENetEvent event;
-	/* Wait up to 1000 milliseconds for an event. */
 	while (true)
 	while (enet_host_service(server, &event, 1000) > 0)
 	{
@@ -85,12 +77,6 @@ int main()
 		{
 		case ENET_EVENT_TYPE_CONNECT:
 		{
-#ifdef TOTAL_LOG
-			printf("A new client connected.\n");
-#endif
-			
-			/* Store any relevant client information here. */
-			//event.peer->data = "Client information";
 			ENetPeer * currentPeer;
 			int count = 0;
 			for (currentPeer = server->peers;
@@ -124,7 +110,6 @@ int main()
 		{
 			if (((PlayerInfo*)(peer->data))->isUpdating)
 			{
-				cout << "packet drop" << endl;
 				continue;
 			}
 
@@ -134,7 +119,6 @@ int main()
 			switch (messageType) {
 			case 2:
 			{
-				//cout << GetTextPointerFromPacket(event.packet) << endl;
 				string cch = GetTextPointerFromPacket(event.packet);
 				if (cch.find("©") != std::string::npos) enet_peer_reset(peer);
 				string str = cch.substr(cch.find("text|") + 5, cch.length() - cch.find("text|") - 1);
@@ -157,7 +141,6 @@ int main()
 
 
 						if (stringstream(temp) >> found)
-							//cout << found;
 							((PlayerInfo*)(peer->data))->wrenchsession = found;
 
 
@@ -432,20 +415,6 @@ int main()
 					string text20 = "|\nadd_button|365d|`o1-Year Subscription Token``|interface/large/store_buttons/store_buttons22.rttex|rt_grope_subs_bundle02|0|5|0|0|||-1|-1||-1|-1|`2You Get:`` 1x 1-Year Subscription Token and 25 Growtokens.<CR><CR>`5Description:`` One full year of special treatment AND 25 Growtokens upfront! You'll get 70 season tokens (as long as there's a seasonal clash running), and 2500 gems every day and a chance of doubling any XP earned, growtime reduction on all seeds planted and Exclusive Skins!|1||||||";
 					string text21 = "|\nadd_button|30d|`o30-Day Subscription Token``|interface/large/store_buttons/store_buttons22.rttex|rt_grope_subs_bundle01|0|4|0|0|||-1|-1||-1|-1|`2You Get:`` 1x 30-Day Free Subscription Token and 2 Growtokens.<CR><CR>`5Description:`` 30 full days of special treatment AND 2 Growtokens upfront! You'll get 70 season tokens (as long as there's a seasonal clash running), and 2500 gems every day and a chance of doubling any XP earned, growtime reduction on all seeds planted and Exclusive Skins!|1||||||";
 					string text22 = "|\nadd_button|video_tapjoy|Watch Videos For Gems|interface/large/store_buttons/store_buttons29.rttex||0|1|0|0|1/5 VIDEOS WATCHED||-1|-1||-1|-1||1||||||";
-
-					/*
-					string text1 = "set_description_text|Welcome to the `2Growtopia Store``!  Tap the item you'd like more info on.`o  `wWant to get `5Supporter`` status? Any Gem purchase (or `57,000`` Gems earned with free `5Tapjoy`` offers) will make you one. You'll get new skin colors, the `5Recycle`` tool to convert unwanted items into Gems, and more bonuses!";
-					string text2 = "|\nadd_button|iapp_menu|Buy Gems|interface/large/store_buttons5.rttex||0|2|0|0|";
-					string text3 = "|\nadd_button|subs_menu|Subscriptions|interface/large/store_buttons22.rttex||0|1|0|0|";
-					string text4 = "|\nadd_button|itemomonth|`oItem Of The Month``|interface/large/store_buttons16.rttex|`2September 2018:`` `9Sorcerer's Tunic of Mystery!`` Capable of reflecting the true colors of the world around it, this rare tunic is made of captured starlight and aether. If you think knitting with thread is hard, just try doing it with moonbeams and magic! The result is worth it though, as these clothes won't just make you look amazing - you'll be able to channel their inherent power into blasts of cosmic energy!``|0|3|200000|0|";
-					string text5 = "|\nadd_button|locks_menu|Locks And Stuff|interface/large/store_buttons3.rttex||0|4|0|0|";
-					string text6 = "|\nadd_button|itempack_menu|Item Packs|interface/large/store_buttons3.rttex||0|3|0|0|";
-					string text7 = "|\nadd_button|bigitems_menu|Awesome Items|interface/large/store_buttons4.rttex||0|6|0|0|";
-					string text8 = "|\nadd_button|weather_menu|Weather Machines|interface/large/store_buttons5.rttex|Tired of the same sunny sky?  We offer alternatives within...|0|4|0|0||";
-					string text9 = "|\nadd_button|token_menu|Growtoken Items|interface/large/store_buttons9.rttex||0|0|0|0|";
-
-					packet::storerequest(peer, text1 + text2 + text3 + text4 + text5 + text6 + text7 + text8 + text9 + text10 + text11 + text12 + text13 + text14 + text15 + text16 + text17 + text18 + text19 + text20 + text21 + text22);
-				}*/
 					packet::storerequest(peer, text1 + text2 + text3 + text4 + text5 + text6 + text7 + text8 + text9 + text10 + text11 + text12 + text13 + text14 + text15 + text16 + text17 + text18 + text19 + text20 + text21 + text22);
 				}
 				if (cch.find("action|buy\nitem|locks") == 0) {
@@ -1833,9 +1802,6 @@ int main()
 						p.Insert(0);
 						p.CreatePacket(peer);
 					}
-#ifdef TOTAL_LOG
-					cout << "Respawning... " << endl;
-#endif
 				}
 				if (cch.find("action|growid") == 0)
 				{
@@ -1845,21 +1811,7 @@ int main()
 						continue;
 					}
 					Sleep(1000);
-#ifndef REGISTRATION
-					{
-						GamePacket p = packetEnd(appendString(appendString(createPacket(), "OnConsoleMessage"), "Registration is not supported yet!"));
-						ENetPacket* packet = enet_packet_create(p.data,
-							p.len,
-							ENET_PACKET_FLAG_RELIABLE);
-						enet_peer_send(peer, 0, packet);
-						delete p.data;
-						//enet_host_flush(server);
-					}
-#endif
-#ifdef REGISTRATION
-					//GamePacket p = packetEnd(appendString(appendString(createPacket(), "OnDialogRequest"), "set_default_color|`o\n\nadd_label_with_icon|big|`w" + itemDefs.at(id).name + "``|left|" + std::to_string(id) + "|\n\nadd_spacer|small|\nadd_textbox|" + itemDefs.at(id).description + "|left|\nadd_spacer|small|\nadd_quick_exit|\nadd_button|chc0|Close|noflags|0|0|\nnend_dialog|gazette||OK|"));
 					packet::dialog(peer, "set_default_color|`o\n\nadd_label_with_icon|big|`wGet a GrowID``|left|206|\n\nadd_spacer|small|\nadd_textbox|A `wGrowID `wmeans `oyou can use a name and password to logon from any device.|\nadd_spacer|small|\nadd_textbox|This `wname `owill be reserved for you and `wshown to other players`o, so choose carefully!|\nadd_text_input|username|GrowID||30|\nadd_text_input|password|Password||100|\nadd_text_input|passwordverify|Password Verify||100|\nadd_textbox|Your `wemail address `owill only be used for account verification purposes and won't be spammed or shared. If you use a fake email, you'll never be able to recover or change your password.|\nadd_text_input|email|Email||100|\nadd_textbox|Your `wDiscord ID `owill be used for secondary verification if you lost access to your `wemail address`o! Please enter in such format: `wdiscordname#tag`o. Your `wDiscord Tag `ocan be found in your `wDiscord account settings`o.|\nadd_text_input|discord|Discord||100|\nend_dialog|register|Cancel|Get My GrowID!|\n");
-#endif
 				}
 				if (cch.find("action|store\nlocation|gem") == 0)
 				{
@@ -1885,19 +1837,6 @@ int main()
 				string text20 = "|\nadd_button|365d|`o1-Year Subscription Token``|interface/large/store_buttons/store_buttons22.rttex|rt_grope_subs_bundle02|0|5|0|0|||-1|-1||-1|-1|`2You Get:`` 1x 1-Year Subscription Token and 25 Growtokens.<CR><CR>`5Description:`` One full year of special treatment AND 25 Growtokens upfront! You'll get 70 season tokens (as long as there's a seasonal clash running), and 2500 gems every day and a chance of doubling any XP earned, growtime reduction on all seeds planted and Exclusive Skins!|1||||||";
 				string text21 = "|\nadd_button|30d|`o30-Day Subscription Token``|interface/large/store_buttons/store_buttons22.rttex|rt_grope_subs_bundle01|0|4|0|0|||-1|-1||-1|-1|`2You Get:`` 1x 30-Day Free Subscription Token and 2 Growtokens.<CR><CR>`5Description:`` 30 full days of special treatment AND 2 Growtokens upfront! You'll get 70 season tokens (as long as there's a seasonal clash running), and 2500 gems every day and a chance of doubling any XP earned, growtime reduction on all seeds planted and Exclusive Skins!|1||||||";
 				string text22 = "|\nadd_button|video_tapjoy|Watch Videos For Gems|interface/large/store_buttons/store_buttons29.rttex||0|1|0|0|1/5 VIDEOS WATCHED||-1|-1||-1|-1||1||||||";
-				/*
-							string text1 = "set_description_text|Welcome to the `2Growtopia Store``!  Tap the item you'd like more info on.`o  `wWant to get `5Supporter`` status? Any Gem purchase (or `57,000`` Gems earned with free `5Tapjoy`` offers) will make you one. You'll get new skin colors, the `5Recycle`` tool to convert unwanted items into Gems, and more bonuses!";
-							string text2 = "|\nadd_button|iapp_menu|Buy Gems|interface/large/store_buttons5.rttex||0|2|0|0|";
-							string text3 = "|\nadd_button|subs_menu|Subscriptions|interface/large/store_buttons22.rttex||0|1|0|0|";
-							string text4 = "|\nadd_button|itemomonth|`oItem Of The Month``|interface/large/store_buttons16.rttex|`2September 2021:`` `9The endless loop of life and death, personified and celebrated. Is it a charm or is it a curse?``|0|3|350000|0|";
-							string text5 = "|\nadd_button|locks_menu|Locks And Stuff|interface/large/store_buttons3.rttex||0|4|5|0|";
-							string text6 = "|\nadd_button|itempack_menu|Item Packs|interface/large/store_buttons3.rttex||0|3|0|10|";
-							string text7 = "|\nadd_button|bigitems_menu|Awesome Items|interface/large/store_buttons4.rttex||0|6|12|0|";
-							string text8 = "|\nadd_button|weather_menu|Weather Machines|interface/large/store_buttons5.rttex|Tired of the same sunny sky?  We offer alternatives within...|0|4|15|0||";
-							string text9 = "|\nadd_button|token_menu|Growtoken Items|interface/large/store_buttons9.rttex||0|1|15|0|";
-
-							packet::storerequest(peer, text1 + text2 + text3 + text4 + text5 + text6 + text7 + text8 + text9 + text10 + text11 + text12 + text13 + text14 + text15 + text16 + text17 + text18 + text19 + text20 + text21 + text22);
-						}*/
 				packet::storerequest(peer, text1 + text2 + text3 + text4 + text5 + text6 + text7 + text8 + text9 + text10 + text11 + text12 + text13 + text14 + text15 + text16 + text17 + text18 + text19 + text20 + text21 + text22);
                 }
 				if (cch.find("action|info") == 0)
@@ -2663,12 +2602,6 @@ int main()
 							offlinelist += "\nadd_button|offlinefrns_" + offname + "|`4OFFLINE: `o" + offname + "``|0|0|";
 
 						}
-
-						/*if (onlinecount > 0) {
-							string ureallygay = "set_default_color|`o\n\nadd_label_with_icon|big|`o" + std::to_string(onlinecount) + " of " + std::to_string(totalcount) + " `wFriends Online|left|1366|\n\nadd_spacer|small|\nadd_button|chc0|`wClose``|0|0|\n\nadd_spacer|small|\nadd_textbox|All of your friend are online!|\n\nadd_spacer|small| \n\nadd_spacer|small| \nadd_button|frnoption|`oFriend Options``|0|0|\nadd_button|backonlinelist|Back``|0|0|\nadd_button||`oClose``|0|0|\nadd_quick_exit|";
-							packet::dialog(peer, ureallygay);
-						}
-						else {*/
 						string gaying = "set_default_color|`o\n\nadd_label_with_icon|big|`o" + std::to_string(onlinecount) + " of " + std::to_string(totalcount) + " `wFriends Online|left|1366|\n\nadd_spacer|small|\nadd_button|chc0|`wClose``|0|0|\nadd_spacer|small|" + offlinelist + "\nadd_spacer|small|\n\nadd_button|frnoption|`oFriend Options``|0|0|\nadd_button|backonlinelist|Back``|0|0|\nadd_button||`oClose``|0|0|\nadd_quick_exit|";
 						packet::dialog(peer, gaying);
 					}
@@ -2679,7 +2612,6 @@ int main()
 					if (btn == "createguildinfo") {
 						string gayguild = "set_default_color|`o\n\nadd_label_with_icon|big|`wGrow Guild|left|5814|\nadd_label|small|`oWelcome to Grow Guilds where you can create a Guild! With a Guild you can level up the Guild to add more members.``|left|4|\n\nadd_spacer|small|\nadd_textbox|`oYou will be charged `60 `oGems.``|\nadd_spacer|small|\nadd_button|createguild|`oCreate a Guild``|0|0|\nadd_button|backsocialportal|Back|0|0|\nend_dialog||Close||\nadd_quick_exit|";
 						packet::dialog(peer, gayguild);
-						/*packet::consolemessage(peer, "`w[`2+`w] `wThis option will be added soon!");*/
 					}
 					if (btn == "confirmcreateguild") {
 						packet::consolemessage(peer, "You created guild");
@@ -2688,8 +2620,6 @@ int main()
 						string fixedguildName = PlayerDB::getProperName(guildName);
 						string guildFlagbg = ((PlayerInfo*)(peer->data))->createGuildFlagBg;
 						string guildFlagfg = ((PlayerInfo*)(peer->data))->createGuildFlagFg;
-
-						//guildmem.push_back(((PlayerInfo*)(peer->data))->rawName);
 
 						std::ofstream o("guilds/" + fixedguildName + ".json");
 						if (!o.is_open()) {
@@ -3199,7 +3129,6 @@ int main()
 						}
 
 					}
-#ifdef REGISTRATION
 					if (isRegisterDialog) {
 
 						int regState = PlayerDB::playerRegister(peer, username, password, passwordverify, email, discord);
@@ -3231,7 +3160,6 @@ int main()
 							packet::consolemessage(peer, "`4Account creation has failed, because Discord ID is invalid!``");
 						}
 					}
-#endif
 				}
 				if (cch.find("action|trash\n|itemID|") == 0) {
 					std::stringstream ss(cch);
@@ -3270,20 +3198,6 @@ int main()
 				if (cch.find(dropText) == 0)
 				{
 					sendDrop(peer, -1, ((PlayerInfo*)(peer->data))->x + (32 * (((PlayerInfo*)(peer->data))->isRotatedLeft?-1:1)), ((PlayerInfo*)(peer->data))->y, atoi(cch.substr(dropText.length(), cch.length() - dropText.length() - 1).c_str()), 1, 0, false);
-					/*int itemID = atoi(cch.substr(dropText.length(), cch.length() - dropText.length() - 1).c_str());
-					PlayerMoving data;
-					data.packetType = 14;
-					data.x = ((PlayerInfo*)(peer->data))->x;
-					data.y = ((PlayerInfo*)(peer->data))->y;
-					data.netID = -1;
-					data.plantingTree = itemID;
-					float val = 1; // item count
-					BYTE val2 = 0; // if 8, then geiger effect
-					
-					BYTE* raw = packPlayerMoving(&data);
-					memcpy(raw + 16, &val, 4);
-					memcpy(raw + 1, &val2, 1);
-					SendPacketRaw(4, raw, 56, 0, peer, ENET_PACKET_FLAG_RELIABLE);*/
 				}
 				if (cch.find("text|") != std::string::npos){
 					PlayerInfo* pData = ((PlayerInfo*)(peer->data));
@@ -3291,18 +3205,6 @@ int main()
 					{
 						((PlayerInfo*)(peer->data))->canWalkInBlocks = true;
 						sendState(peer);
-							/*PlayerMoving data;
-							data.packetType = 0x14;
-							data.characterState = 0x0; // animation
-							data.x = 1000;
-							data.y = 1;
-							data.punchX = 0;
-							data.punchY = 0;
-							data.XSpeed = 300;
-							data.YSpeed = 600;
-							data.netID = ((PlayerInfo*)(peer->data))->netID;
-							data.plantingTree = 0xFF;
-							SendPacketRaw(4, packPlayerMoving(&data), 56, 0, peer, ENET_PACKET_FLAG_RELIABLE);*/
 					}
 					else if (str.substr(0, 7) == "/state ")
 					{
@@ -3806,8 +3708,6 @@ int main()
 								ENET_PACKET_FLAG_RELIABLE);
 
 							enet_peer_send(currentPeer, 0, packet2);
-							
-							//enet_host_flush(server);
 						}
 						delete[] data;
 					}
@@ -3859,8 +3759,6 @@ int main()
 							ENET_PACKET_FLAG_RELIABLE);
 
 						enet_peer_send(currentPeer, 0, packet2);
-
-						//enet_host_flush(server);
 					}
 					delete data;
 					}
@@ -3908,8 +3806,6 @@ int main()
 							ENET_PACKET_FLAG_RELIABLE);
 
 						enet_peer_send(currentPeer, 0, packet2);
-
-						//enet_host_flush(server);
 					}
 					delete[] data;
 					}
@@ -3961,8 +3857,6 @@ int main()
 								ENET_PACKET_FLAG_RELIABLE);
 
 							enet_peer_send(currentPeer, 0, packet2);
-							
-							//enet_host_flush(server);
 						}
 						delete data;
 					}
@@ -4021,9 +3915,7 @@ int main()
 						int val = 0;
 						val = atoi(str.substr(6, cch.length() - 6 - 1).c_str());
 						PlayerMoving data;
-						//data.packetType = 0x14;
 						data.packetType = 0x1B;
-						//data.characterState = 0x924; // animation
 						data.characterState = 0x0; // animation
 						data.x = 0;
 						data.y = 0;
@@ -4107,7 +3999,6 @@ int main()
 					}
 					else {
 						((PlayerInfo*)(event.peer->data))->rawName = PlayerDB::getProperName(((PlayerInfo*)(event.peer->data))->tankIDName);
-#ifdef REGISTRATION
 						int logStatus = PlayerDB::playerLogin(peer, ((PlayerInfo*)(event.peer->data))->rawName, ((PlayerInfo*)(event.peer->data))->tankIDPass);
 						if (logStatus == 1) {
 							PlayerInfo* p = ((PlayerInfo*)(peer->data));
@@ -4252,11 +4143,6 @@ int main()
 							packet::consolemessage(peer, "`rWrong username or password!``");
 							enet_peer_disconnect_later(peer, 0);
 						}
-#else
-						
-						((PlayerInfo*)(event.peer->data))->displayName = PlayerDB::fixColors(((PlayerInfo*)(event.peer->data))->tankIDName.substr(0, ((PlayerInfo*)(event.peer->data))->tankIDName.length()>18 ? 18 : ((PlayerInfo*)(event.peer->data))->tankIDName.length()));
-						if (((PlayerInfo*)(event.peer->data))->displayName.length() < 3) ((PlayerInfo*)(event.peer->data))->displayName = "Person that doesn't know how the name looks!";
-#endif
 					}
 					for (char c : ((PlayerInfo*)(event.peer->data))->displayName) if (c < 0x20 || c>0x7A) ((PlayerInfo*)(event.peer->data))->displayName = "Bad characters in name, remove them!";
 					
@@ -4340,10 +4226,7 @@ int main()
 							ENET_PACKET_FLAG_RELIABLE);
 						enet_peer_send(peer, 0, packet);
 						((PlayerInfo*)(peer->data))->isUpdating = true;
-						//enet_peer_disconnect_later(peer, 0); // TODO: add this back, and fix it properly
-						//enet_host_flush(server);
 					}
-					// TODO FIX refresh_item_data ^^^^^^^^^^^^^^
 				}
 				break;
 			}
@@ -4352,7 +4235,6 @@ int main()
 				break;
 			case 3:
 			{
-				//cout << GetTextPointerFromPacket(event.packet) << endl;
 				std::stringstream ss(GetTextPointerFromPacket(event.packet));
 				std::string to;
 				bool isJoinReq = false;
@@ -4362,9 +4244,6 @@ int main()
 					string act = to.substr(to.find("|") + 1, to.length() - to.find("|") - 1);
 					if (id == "name" && isJoinReq)
 					{
-#ifdef TOTAL_LOG
-						cout << "Entering some world..." << endl;
-#endif
 						if (!((PlayerInfo*)(peer->data))->hasLogon) break;
 						try {
 							if (act.length() > 30) {
@@ -4493,7 +4372,6 @@ int main()
 							break;
 						}
 						PlayerMoving *data2 = unpackPlayerMoving(tankUpdatePacket);
-						//cout << data2->packetType << endl;
 						if (data2->packetType == 11)
 						{
 							sendCollect(peer, ((PlayerInfo*)(peer->data))->netID, data2->plantingTree);
@@ -4510,7 +4388,6 @@ int main()
 						}
 						if (data2->packetType == 10)
 						{
-							//cout << pMov->x << ";" << pMov->y << ";" << pMov->plantingTree << ";" << pMov->punchX << ";" << pMov->punchY << ";" << pMov->characterState << endl;
 							int item = pMov->plantingTree;
 							PlayerInfo* info = ((PlayerInfo*)(peer->data));
 							ItemDefinition pro;
@@ -4778,9 +4655,6 @@ int main()
 								((PlayerInfo*)(event.peer->data))->cloth9 = pMov->plantingTree;
 								break;							
 							default:
-#ifdef TOTAL_LOG
-								cout << "Invalid item activated: " << pMov->plantingTree << " by " << ((PlayerInfo*)(event.peer->data))->displayName << endl;
-#endif
 								break;
 							}
 							sendClothes(peer);
@@ -4790,10 +4664,8 @@ int main()
 						if (data2->packetType == 18)
 						{
 							sendPData(peer, pMov);
-							// add talk buble
 						}
 						if (data2->punchX != -1 && data2->punchY != -1) {
-							//cout << data2->packetType << endl;
 							if (data2->packetType == 3)
 							{
 								sendTileUpdate(data2->punchX, data2->punchY, data2->plantingTree, ((PlayerInfo*)(event.peer->data))->netID, peer);
@@ -4801,21 +4673,6 @@ int main()
 							else {
 
 							}
-							/*PlayerMoving data;
-							//data.packetType = 0x14;
-							data.packetType = 0x3;
-							//data.characterState = 0x924; // animation
-							data.characterState = 0x0; // animation
-							data.x = data2->punchX;
-							data.y = data2->punchY;
-							data.punchX = data2->punchX;
-							data.punchY = data2->punchY;
-							data.XSpeed = 0;
-							data.YSpeed = 0;
-							data.netID = ((PlayerInfo*)(event.peer->data))->netID;
-							data.plantingTree = data2->plantingTree;
-							SendPacketRaw(4, packPlayerMoving(&data), 56, 0, peer, ENET_PACKET_FLAG_RELIABLE);
-							cout << "Tile update at: " << data2->punchX << "x" << data2->punchY << endl;*/
 							
 						}
 						delete data2;
@@ -4825,51 +4682,30 @@ int main()
 					else {
 						cout << "Got bad tank packet";
 					}
-					/*char buffer[2048];
-					for (int i = 0; i < event->packet->dataLength; i++)
-					{
-					sprintf(&buffer[2 * i], "%02X", event->packet->data[i]);
-					}
-					cout << buffer;*/
 				}
 			}
 			break;
 			case 5:
 				break;
 			case 6:
-				//cout << GetTextPointerFromPacket(event.packet) << endl;
 				break;
 			}
 			enet_packet_destroy(event.packet);
 			break;
 		}
+		case ENET_EVENT_TYPE_NONE:
+		{
+			//no player is supposed to  have a none event type lol.
+			break;
+		}
 		case ENET_EVENT_TYPE_DISCONNECT:
-#ifdef TOTAL_LOG
-			printf("Peer disconnected.\n");
-#endif
-			/* Reset the peer's client information. */
-			/*ENetPeer* currentPeer;
-			for (currentPeer = server->peers;
-				currentPeer < &server->peers[server->peerCount];
-				++currentPeer)
-			{
-				if (currentPeer->state != ENET_PEER_STATE_CONNECTED)
-					continue;
-
-				GamePacket p = packetEnd(appendString(appendString(createPacket(), "OnConsoleMessage"), "Player `o" + ((PlayerInfo*)(event.peer->data))->tankIDName + "`o just left the game..."));
-				ENetPacket * packet = enet_packet_create(p.data,
-					p.len,
-					ENET_PACKET_FLAG_RELIABLE);
-				enet_peer_send(currentPeer, 0, packet);
-				enet_host_flush(server);
-			}*/
 			sendPlayerLeave(peer, (PlayerInfo*)(event.peer->data));
 			((PlayerInfo*)(event.peer->data))->inventory.items.clear();
 			delete (PlayerInfo*)event.peer->data;
 			event.peer->data = NULL;
 		}
 	}
-	cout << "Program ended??? Huh?" << endl;
+	cout << "Software Just Hit Its End!" << endl;
 	while (1);
 	return 0;
 }

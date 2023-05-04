@@ -28,6 +28,9 @@
     <Filter Include="Header Files\Guild">
       <UniqueIdentifier>{21f04d9f-19b3-4d28-8d81-3d4fd153996c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\server sided">
+      <UniqueIdentifier>{20235277-9bfe-4928-812f-a3f77c7ce1bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -67,7 +70,10 @@
       <Filter>Header Files\Packet</Filter>
     </ClInclude>
     <ClInclude Include="server_sided.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\server sided</Filter>
+    </ClInclude>
+    <ClInclude Include="event_pool.h">
+      <Filter>Header Files\server sided</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

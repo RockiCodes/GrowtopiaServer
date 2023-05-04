@@ -161,6 +161,7 @@
   <ItemGroup>
     <ClInclude Include="back_end.h" />
     <ClInclude Include="discord_webhook.h" />
+    <ClInclude Include="event_pool.h" />
     <ClInclude Include="game_packet.h" />
     <ClInclude Include="guild_action.h" />
     <ClInclude Include="player_action.h" />
