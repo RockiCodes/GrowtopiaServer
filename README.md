@@ -7,7 +7,7 @@ This project has been published under GNU AFFERO GPL license, so you need to **p
 
 # **TODO list:**
 - [X] ENet Functions For Connectivity (using ENet C++ Library)
-- [ ] Item Serializing (support for new v15)
+- [X] Item Serializing (support for new v15)
 - [X] Readable and Easy to Use/Understand
 - [ ] Make heavy events asynchronous with possibly some good thread count (probably one or two) and connect them to event pool or use callbacks
 - [X] Premium World Lock System (Used to purchase ingame goods)
