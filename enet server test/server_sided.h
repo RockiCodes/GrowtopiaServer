@@ -222,6 +222,15 @@ void buildItemsDatabase() {
         if (itemsdatVersion >= 12) memPos += 13;
         if (itemsdatVersion >= 13) memPos += 4;
         if (itemsdatVersion >= 14) memPos += 4;
+        if (itemsdatVersion >= 15) {
+            memPos += 25;
+            int16_t strLen = *(int16_t*)&data[memPos];
+            memPos += 2;
+            for (int j = 0; j < strLen; j++) {
+                tile.punchOptions += data[memPos];
+                memPos++;
+            }
+        }
         if (i != tile.id)
             cout << "Item are unordered!" << i << "/" << tile.id << endl;
 
