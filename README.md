@@ -10,7 +10,7 @@ This project has been published under GNU AFFERO GPL license, so you need to **p
 - [X] Item Serializing (support for new v15)
 - [X] Readable and Easy to Use/Understand
 - [X] Premium World Lock System (Used to purchase ingame goods)
-- [ ] Discord Webhook Code (discord_webhook.h)
+- [X] Discord Webhook Code (discord_webhook.h)
 - [X] World Lock Algorithm (Wl, Dl, BGL, etc)
 - [ ] Tile Algorithm (Sl, Bl, Hl, Builder Lock)
 - [X] Event Pool (found in event_pool.h [used for delaying actions])
@@ -19,3 +19,8 @@ If you want to support the development of this project, make sure you contribute
 
 Make Sure To Check Out My Youtube Channel: (JenZip GT)
 - https://www.youtube.com/channel/UCBpSmvDyThHz7obkqivKTLA
+
+Updates:
+-WinHTTP, added winhttp.h for webhook messages using winhttp by microsoft
+-Added ItemDat v15 Support
+-Switched to x64, by changing enet.lib to enet64.lib and changed input directories
